@@ -7,13 +7,10 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ApiManager {
-  // private baseUrl: String ='http://localhost:3001/api/';
-  // private baseUrl: String = 'http://ec2-52-14-250-16.us-east-2.compute.amazonaws.com:3000/';
   private baseUrl: String = 'http://e25ea084.ngrok.io/api/';
   constructor(
     private http: Http,
-  ) {
-  }
+  ) { }
 
   postReq(url, data) {
     console.log('err api', url);
